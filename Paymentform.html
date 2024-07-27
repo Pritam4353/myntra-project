@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Pay.css">
+</head>
+<body>
+    <form action="">
+    <h2 Align="center">Payment Form</h2>
+    <fieldset>
+    <h3>User Details</h3>
+    <fieldset>
+    <span>Name :* <input type="Name" name="name" required></span>
+    <span>  
+        <fieldset>
+            <legend>Gender :</legend>
+            <input type="radio" name="Gender">Male
+            <input type="radio" name="Gender">Female
+        </fieldset>
+    </span>
+    <p>Contact No. : <input type="number" required></p>
+    <p>E-mail : * <input type="email" name="email" id="email" required></p>
+    <div>Photo : <input type="file" required><h5>*Size of photo is under 100KB</h5></div>
+    <p>
+        Address : <textarea name="address" id="address" cols="50" rows="5"></textarea>
+    </p>
+    <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+    </fieldset>
+    <h3>Payement information</h3>
+    <fieldset class="payem">
+        <p>
+            Payement type:* 
+                <select name="payement type" name="payement_type" id="'payement_type" required>
+                    <option value="">Select payement type</option>
+                    <option value="Net Banking">Net Banking</option>
+                    <option value="Debit card">Debit card</option>
+                    <option value="Credit card">Credit Card</option>
+                    <option value="UPI">UPI</option>
+                    <option value="E-challan">E-challan</option>
+                    <option value="Demand Draft">Demand Draft</option>
+                </select>
+        </p>
+    <p>
+        <img src="bank.png" alt="There is a image" width="300" height="450" Align="right">
+        Card type:* 
+            <select name="card type" name="card_type" id="'card_type" required>
+                <option value="">Select Card</option>
+                <option value="Master card">Master Card</option>
+                <option value="Maestro card">Maestro Card</option>
+                <option value="VISA card">VISA Card</option>
+                <option value="Rupay card">Rupay Card</option>
+                <option value="UPI id">UPI id</option>
+            </select>
+    </p>
+    <p>Card number :* <input type="number" name="card_number" required></p>
+    <p>Expiration date:*<input type="date" name="exp_date" required></p>
+    <p>CVV :*<input type="password" name="cvv" required></p>
+    <input type="submit" value="Pay Now">
+    </fieldset>
+    </fieldset>
+</form>
+</body>
+</html>
